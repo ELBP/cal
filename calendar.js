@@ -183,16 +183,17 @@ class quickCalFrontEnd {
 
         var startOn = new Date(this.currentYearG, this.currentIndexOfMonthG, 1).getDay(); 
           
-        //toogle set displayed -- might just stikc in above function and run three seperate classes considering things will probably change  
-        switch(this.displayType) {
-              case "weekly": runSet();
-              break;
-              case "weekly": runSet();
-              break;
-              case "weekly": runSet();
-              break;
-              default: return; //not in set reset and re run      
-        }
+          //dependent on the state of the document run a seperate view... so if the state of the doc is weekly, create a different set of elmeents relative to current day you are on... so just use if statement right below here... no need to break up into different classes
+          //
+//         switch(this.displayType) {
+//               case "weekly": runSet();
+//               break;
+//               case "weekly": runSet();
+//               break;
+//               case "weekly": runSet();
+//               break;
+//               default: return; //not in set reset and re run      
+//         }
             
         this.cal.innerHTML = ``;
         var elem = this.cal;
