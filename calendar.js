@@ -9,6 +9,7 @@ class quickCalFrontEnd {
         
     */
        
+      //get rid of time list and make original set pop up from the database ... jsut create an extra column with the stored times for that day... something like that
 
     //default configuration that allows every functionality of calendar -- add place
     defaultConfig = (getBookedFile, apptFile, searchAppointmentFile, redirectUrl, timeList, redirectMessage, greetingMessage) => {
@@ -100,7 +101,7 @@ class quickCalFrontEnd {
     }
 
     
-    //fill the calendar -- stick this john in react component
+    //fill the calendar
     fillSkeleton = () => {
           
          this.skeleton.style.cssText = `margin: auto; text-align: center; font-family: Times New Roman", Times, serif;`;
