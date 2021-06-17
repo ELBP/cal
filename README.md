@@ -1,5 +1,5 @@
 
-https://www.vznzip.com/calendar.html
+https://www.vznzip.com
 
 # npm-quickCal
 
